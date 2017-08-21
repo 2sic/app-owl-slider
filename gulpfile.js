@@ -1,18 +1,19 @@
-﻿var gulp = require('gulp'),
-    concat = require("gulp-concat");
+﻿var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
-var bases = {
-    owl: "bower_components/owlcarousel/owl-carousel/",
-    src: "assets/",
-    distLib: "dist/lib/owl2/assets/"
-};
+var sourceFiles = ['src/*.scss'];
 
-
-gulp.task("build-css", function() {
-    gulp.src(bases.src + "*.css")
-        .pipe(gulp.dest(bases.distLib));
+gulp.task('watch-sass', function () {
+	gulp.watch(sourceFiles, ['sass']);
 });
 
-gulp.task("default", function() {
-    gulp.watch(bases.src + "*.*", ["build-css"]);
+gulp.task('sass', function () {
+  return gulp.src(sourceFiles)
+	.pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+	.pipe(sourcemaps.write('.', { sourceRoot: '../src/' }))
+    .pipe(gulp.dest('dist/lib/owl2/assets/'));
 });
+
+gulp.task('default', ['sass', 'watch-sass']);
