@@ -1,7 +1,9 @@
 /*
 * 	Owl Carousel Owl 2sic Theme
-*   Date: 21.08.2017
 */
+
+// Variables
+$brand-primary: #5C4483;
 
 .owl-2sic .owl-controls{
 	margin-top: 10px;
@@ -19,23 +21,14 @@
 	color: #fff;
 	display: inline-block;
 	zoom: 1;
-	*display: inline;/*IE7 life-saver */
 	margin: 5px;
 	padding: 3px 10px;
 	font-size: 12px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	background: #1B9CD8;
-	filter: Alpha(Opacity=70);/*IE7 fix*/
+	background: $brand-primary;
 	opacity: 0.7;
-}
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-2sic .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-	text-decoration: none;
 }
 
 .owl-2sic .owl-controls .owl-buttons div.owl-prev {
@@ -52,23 +45,25 @@ top: 50%;
 margin-top: -7px;
 }
 
+
+/*
+
 .owl-2sic .owl-controls .owl-buttons div.owl-next.disabled, .owl-2sic .owl-controls .owl-buttons div.owl-prev.disabled{
 	display: none;
 }
 
-/* Styling Pagination*/
+*/
 
+/* Styling Pagination*/
 .owl-2sic .owl-controls .owl-page{
 	display: inline-block;
 	zoom: 1;
-	*display: inline;/*IE7 life-saver */
 }
 .owl-2sic .owl-controls .owl-page span{
 	display: block;
 	width: 12px;
 	height: 12px;
 	margin: 5px 7px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -78,7 +73,6 @@ margin-top: -7px;
 
 .owl-2sic .owl-controls .owl-page.active span,
 .owl-2sic .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
 	opacity: 1;
 }
 
@@ -112,8 +106,8 @@ margin-top: -7px;
 	right: 0;
 	max-width: none;
 	color: #fff;
-	background: #3067B4; /* zombie browser fallback */
-	background: rgba(48,103,180,.8);
+	background: $brand-primary; /* zombie browser fallback */
+	background: rgba(92,68,131,.8);
 	padding-top: 25px;
 	padding-bottom: 30px;
 }
@@ -170,7 +164,7 @@ body.va-mainnav-center .co-slidercontent .co-slidertext {
 		position: static;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background: #3067B4;
+		background: $brand-primary;
 	}
 	.co-slidercontent p {
 		width: 100%;

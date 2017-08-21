@@ -56,13 +56,13 @@
             itemsMobile: false,
             lazyLoad: true,
             navigationText: ["&lt;", "&gt;"],
-            pagination: @App.Settings.ShowPagination.ToString().ToLower(),
+            dots: @App.Settings.ShowPagination.ToString().ToLower(),
             theme: "owl-2sic",
             autoplay: @ListContent.AutoPlay.ToString().ToLower(),
 			autoHeight : false,
-            rewindSpeed: 1000,
-            rewindNav: @App.Settings.RewindNav.ToString().ToLower(),
-            navigation: @App.Settings.ShowNavigation.ToString().ToLower(),
+            //rewindSpeed: 1000,
+            rewind: @App.Settings.RewindNav.ToString().ToLower(),
+            nav: @App.Settings.ShowNavigation.ToString().ToLower(),
             beforeInit: function (elem) {
                 if(@ListContent.Random.ToString().ToLower())
                     random(elem);
