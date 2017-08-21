@@ -1,0 +1,71 @@
+<script src="@App.Path/dist/lib/owl2/owl.carousel.min.js"></script>
+
+<link rel="stylesheet" href="@App.Path/dist/lib/owl2/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="@App.Path/dist/lib/owl2/assets/owl.theme.default.min.css">
+
+<div class="co-gallery">
+    <div class="co-list owl-carousel">
+        @foreach (var Content in AsDynamic(Data["Default"]))
+        {
+            <div class="sc-element co-gallery-slide">
+                @Edit.Toolbar(Content)
+				<img class="co-gallery-image lazyOwl" src="@(Content.Image)?w=1600&amp;h=600&amp;mode=crop&amp;scale=both&amp;quality=80" alt="@(!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title)" />
+				@if(!String.IsNullOrEmpty(Content.Heading) || !String.IsNullOrEmpty(Content.Text) || !String.IsNullOrEmpty(Content.LinkText)) {
+					<div class="co-slidercontent container-fluid">
+						<div class="">
+							@if(!String.IsNullOrEmpty(Content.Heading)){
+								<p class="lead">
+									@Html.Raw(Content.Heading.Replace("\n","<br/>"))
+								</p>
+							}
+							@if(!String.IsNullOrEmpty(Content.Text)){
+								<div class="co-slidertext">
+									@Html.Raw(Content.Text)
+								</div>
+							}
+							@if(!String.IsNullOrEmpty(Content.LinkText)){
+								<a class="btn-sm btn-default" href="@Content.Link" target="@(Content.TargetBlank is bool && Content.TargetBlank ? "_blank" : "_self")" title="@(!String.IsNullOrEmpty(Content.LinkTitleAttr) ? Content.LinkTitleAttr : Content.LinkText)">@Content.LinkText</a>
+							}
+						</div>
+					</div>
+				}
+            </div>
+        }
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // Sort random function
+        function random(owlSelector) {
+            owlSelector.children().sort(function () {
+                return Math.round(Math.random()) - 0.5;
+            }).each(function () {
+                $(this).appendTo(owlSelector);
+            });
+        };
+
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            itemsDesktop: false,
+            itemsDesktopSmall: false,
+            itemsTablet: false,
+            itemsMobile: false,
+            lazyLoad: true,
+            navigationText: ["&lt;", "&gt;"],
+            pagination: @App.Settings.ShowPagination.ToString().ToLower(),
+            theme: "owl-2sic",
+            autoplay: @ListContent.AutoPlay.ToString().ToLower(),
+			autoHeight : false,
+            rewindSpeed: 1000,
+            rewindNav: @App.Settings.RewindNav.ToString().ToLower(),
+            navigation: @App.Settings.ShowNavigation.ToString().ToLower(),
+            beforeInit: function (elem) {
+                if(@ListContent.Random.ToString().ToLower())
+                    random(elem);
+            }
+        });
+    });
+</script>
