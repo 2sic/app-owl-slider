@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.04.01" ExportDate="2017-08-22T10:29:09.6623083+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.04.01" ExportDate="2017-08-22T10:38:52.9576826+02:00">
   <Header>
     <App Guid="b1a62298-9c72-44f0-bfee-dfecdab6fe69" />
     <Language Default="de-DE" />
@@ -430,50 +430,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
       <Value Key="Version" Value="02.00.00" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="2cae6ff8-02ed-495e-bd40-db81944687af">
-      <Value Key="Heading" Value="Title of this&#xA;new image" Type="String" />
-      <Value Key="Image" Value="file:160" Type="Hyperlink" />
-      <Value Key="ImgAltAttr" Value="" Type="String" />
-      <Value Key="Link" Value="http://www.google.com" Type="Hyperlink" />
-      <Value Key="LinkText" Value="Go to Google" Type="String" />
-      <Value Key="LinkTitleAttr" Value="" Type="String" />
-      <Value Key="TargetBlank" Value="True" Type="Boolean" />
-      <Value Key="Text" Value="&lt;p&gt;Text of this image!&lt;/p&gt;" Type="String" />
-      <Value Key="Title" Value="Test-Bild 2" Type="String" />
-    </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="4d172565-51ee-4dd2-87ee-d50ff23a3d0c" KeyNumber="3" />
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="b808fe25-5798-4b38-9ee0-6e8a4916f16d">
-      <Value Key="Heading" Value="Test" Type="String" />
-      <Value Key="Image" Value="file:161" Type="Hyperlink" />
-      <Value Key="ImgAltAttr" Value="test 2" Type="String" />
-      <Value Key="Link" Value="#" Type="Hyperlink" />
-      <Value Key="LinkText" Value="Linktext" Type="String" />
-      <Value Key="LinkTitleAttr" Value="" Type="String" />
-      <Value Key="TargetBlank" Value="True" Type="Boolean" />
-      <Value Key="Text" Value="&lt;p&gt;Wow dies ist ein super text :)&lt;/p&gt;" Type="String" />
-      <Value Key="Title" Value="Test 2" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="eb0c6e77-35b3-4f39-9c9b-35b29747e5c4">
-      <Value Key="Heading" Value="test" Type="String" />
-      <Value Key="Image" Value="file:162" Type="Hyperlink" />
-      <Value Key="ImgAltAttr" Value="test" Type="String" />
-      <Value Key="Link" Value="http://" Type="Hyperlink" />
-      <Value Key="LinkText" Value="" Type="String" />
-      <Value Key="LinkTitleAttr" Value="" Type="String" />
-      <Value Key="TargetBlank" Value="False" Type="Boolean" />
-      <Value Key="Text" Value="" Type="String" />
-      <Value Key="Title" Value="Test" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="e61dc85a-9670-4a4a-92f1-b34374d5b2ff" AttributeSetName="Slider Settings" EntityGUID="48cb9ced-5468-4abb-814f-b4d3f55c3a00">
-      <Value Key="AutoPlay" Value="True" Type="Boolean" />
-      <Value Key="AutoplaySpeed" Value="1000" Type="Number" />
-      <Value Key="InfinityLoop" Value="False" Type="Boolean" />
-      <Value Key="Random" Value="False" Type="Boolean" />
-      <Value Key="RewindNav" Value="False" Type="Boolean" />
-      <Value Key="ShowNavigation" Value="False" Type="Boolean" />
-      <Value Key="ShowPagination" Value="False" Type="Boolean" />
-      <Value Key="Title" Value="Liste" Type="String" />
-    </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="4a17e76e-0161-45a0-b699-b6a00c47c18e">
       <Value Key="ContentDemoEntity" Value="0b69f36f-e090-4264-bd0c-ed34ce999594" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="371bc366-20ba-4e85-9a04-3bc0d59c0392" Type="String" />
@@ -491,57 +448,44 @@
       <Value Key="UseForList" Value="True" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="9adfd9cd-cf09-4015-b879-02702562c479">
-      <Value Key="Heading" Value="" Type="String" />
-      <Value Key="Image" Value="file:163" Type="Hyperlink" />
-      <Value Key="ImgAltAttr" Value="" Type="String" />
-      <Value Key="Link" Value="http://" Type="Hyperlink" />
-      <Value Key="LinkText" Value="" Type="String" />
-      <Value Key="LinkTitleAttr" Value="" Type="String" />
-      <Value Key="TargetBlank" Value="False" Type="Boolean" />
-      <Value Key="Text" Value="" Type="String" />
-      <Value Key="Title" Value="asdf" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="6a93bd63-b6de-4e27-b831-e1c862432ac4">
-      <Value Key="Heading" Value="" Type="String" />
-      <Value Key="Image" Value="file:164" Type="Hyperlink" />
-      <Value Key="ImgAltAttr" Value="" Type="String" />
-      <Value Key="Link" Value="http://" Type="Hyperlink" />
-      <Value Key="LinkText" Value="" Type="String" />
-      <Value Key="LinkTitleAttr" Value="" Type="String" />
-      <Value Key="TargetBlank" Value="False" Type="Boolean" />
-      <Value Key="Text" Value="" Type="String" />
-      <Value Key="Title" Value="sdf" Type="String" />
-    </Entity>
   </Entities>
   <PortalFiles>
     <File Id="159" RelativePath="Content\Demo\Demo-1.jpg" />
+    <File Id="165" RelativePath="adam\OwlCarousel\15X7sBoK9UGHqnCrS13jAg\Image\BeispielbilderWide (10 of 23).jpg" />
+    <File Id="170" RelativePath="adam\OwlCarousel\3iVqJltUzEigFVw8LQEZYw\Image\Beispielbilder (13 von 16).jpg" />
+    <File Id="166" RelativePath="adam\OwlCarousel\3xp6yiPI8USnYGsBiA5iMQ\Image\BeispielbilderWide (18 of 23).jpg" />
+    <File Id="162" RelativePath="adam\OwlCarousel\d24M67M1OU-cmzWyl0flxA\Image\BeispielbilderWide (18 of 23).jpg" />
     <File Id="160" RelativePath="adam\OwlCarousel\-G-uLO0CXkm9QNuBlEaHrw\Image\file000555007525.jpg" />
     <File Id="161" RelativePath="adam\OwlCarousel\Jf4IuJhXOEue4G6KSRbxbQ\Image\BeispielbilderWide (21 of 23).jpg" />
-    <File Id="162" RelativePath="adam\OwlCarousel\d24M67M1OU-cmzWyl0flxA\Image\BeispielbilderWide (18 of 23).jpg" />
-    <File Id="163" RelativePath="adam\OwlCarousel\zdnfmgnPFUC4eQJwJWLEeQ\Image\Beispielbilder (2 von 16).jpg" />
-    <File Id="164" RelativePath="adam\OwlCarousel\Y72Tat62J064MeHIYkMqxA\Image\Beispielbilder (10 von 16).jpg" />
-    <File Id="165" RelativePath="adam\OwlCarousel\15X7sBoK9UGHqnCrS13jAg\Image\BeispielbilderWide (10 of 23).jpg" />
-    <File Id="166" RelativePath="adam\OwlCarousel\3xp6yiPI8USnYGsBiA5iMQ\Image\BeispielbilderWide (18 of 23).jpg" />
+    <File Id="171" RelativePath="adam\OwlCarousel\pBIBPUS5fEaZSsZ4zienUg\Image\Beispielbilder (4 von 16).jpg" />
+    <File Id="169" RelativePath="adam\OwlCarousel\QLLZ6C6lLEu1XZy5Gslktw\Image\Beispielbilder (10 von 16).jpg" />
     <File Id="167" RelativePath="adam\OwlCarousel\veObZ7WDH0GCZuZzUR2BuQ\Image\a.jpg" />
     <File Id="168" RelativePath="adam\OwlCarousel\veObZ7WDH0GCZuZzUR2BuQ\Image\BeispielbilderWide (11 of 23).jpg" />
+    <File Id="164" RelativePath="adam\OwlCarousel\Y72Tat62J064MeHIYkMqxA\Image\Beispielbilder (10 von 16).jpg" />
+    <File Id="163" RelativePath="adam\OwlCarousel\zdnfmgnPFUC4eQJwJWLEeQ\Image\Beispielbilder (2 von 16).jpg" />
   </PortalFiles>
   <PortalFolders>
     <Folder Id="83" RelativePath="Content/Demo/" />
+    <Folder Id="96" RelativePath="adam/OwlCarousel/15X7sBoK9UGHqnCrS13jAg/Image/" />
+    <Folder Id="104" RelativePath="adam/OwlCarousel/3iVqJltUzEigFVw8LQEZYw/Image/" />
+    <Folder Id="98" RelativePath="adam/OwlCarousel/3xp6yiPI8USnYGsBiA5iMQ/Image/" />
+    <Folder Id="90" RelativePath="adam/OwlCarousel/d24M67M1OU-cmzWyl0flxA/Image/" />
     <Folder Id="86" RelativePath="adam/OwlCarousel/-G-uLO0CXkm9QNuBlEaHrw/Image/" />
     <Folder Id="88" RelativePath="adam/OwlCarousel/Jf4IuJhXOEue4G6KSRbxbQ/Image/" />
-    <Folder Id="90" RelativePath="adam/OwlCarousel/d24M67M1OU-cmzWyl0flxA/Image/" />
-    <Folder Id="92" RelativePath="adam/OwlCarousel/zdnfmgnPFUC4eQJwJWLEeQ/Image/" />
-    <Folder Id="94" RelativePath="adam/OwlCarousel/Y72Tat62J064MeHIYkMqxA/Image/" />
-    <Folder Id="96" RelativePath="adam/OwlCarousel/15X7sBoK9UGHqnCrS13jAg/Image/" />
-    <Folder Id="98" RelativePath="adam/OwlCarousel/3xp6yiPI8USnYGsBiA5iMQ/Image/" />
+    <Folder Id="106" RelativePath="adam/OwlCarousel/pBIBPUS5fEaZSsZ4zienUg/Image/" />
+    <Folder Id="102" RelativePath="adam/OwlCarousel/QLLZ6C6lLEu1XZy5Gslktw/Image/" />
     <Folder Id="100" RelativePath="adam/OwlCarousel/veObZ7WDH0GCZuZzUR2BuQ/Image/" />
+    <Folder Id="94" RelativePath="adam/OwlCarousel/Y72Tat62J064MeHIYkMqxA/Image/" />
+    <Folder Id="92" RelativePath="adam/OwlCarousel/zdnfmgnPFUC4eQJwJWLEeQ/Image/" />
     <Folder Id="84" RelativePath="adam/OwlCarousel/" />
     <Folder Id="95" RelativePath="adam/OwlCarousel/15X7sBoK9UGHqnCrS13jAg/" />
+    <Folder Id="103" RelativePath="adam/OwlCarousel/3iVqJltUzEigFVw8LQEZYw/" />
     <Folder Id="97" RelativePath="adam/OwlCarousel/3xp6yiPI8USnYGsBiA5iMQ/" />
     <Folder Id="89" RelativePath="adam/OwlCarousel/d24M67M1OU-cmzWyl0flxA/" />
     <Folder Id="85" RelativePath="adam/OwlCarousel/-G-uLO0CXkm9QNuBlEaHrw/" />
     <Folder Id="87" RelativePath="adam/OwlCarousel/Jf4IuJhXOEue4G6KSRbxbQ/" />
+    <Folder Id="105" RelativePath="adam/OwlCarousel/pBIBPUS5fEaZSsZ4zienUg/" />
+    <Folder Id="101" RelativePath="adam/OwlCarousel/QLLZ6C6lLEu1XZy5Gslktw/" />
     <Folder Id="99" RelativePath="adam/OwlCarousel/veObZ7WDH0GCZuZzUR2BuQ/" />
     <Folder Id="93" RelativePath="adam/OwlCarousel/Y72Tat62J064MeHIYkMqxA/" />
     <Folder Id="91" RelativePath="adam/OwlCarousel/zdnfmgnPFUC4eQJwJWLEeQ/" />
