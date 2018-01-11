@@ -9,10 +9,10 @@
         {
             <div class="sc-element co-gallery-slide">
                 @Edit.Toolbar(Content)
-				<img class="co-gallery-image lazyOwl" src="@(Content.Image)?w=1600&amp;h=600&amp;mode=crop&amp;scale=both&amp;quality=80" alt="@(!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title)" />
+				<img class="co-gallery-image owl-lazy" data-src="@(Content.Image)?w=1600&amp;h=630&amp;mode=crop&amp;scale=both&amp;quality=80" alt="@(!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title)" />
 				@if(!String.IsNullOrEmpty(Content.Heading) || !String.IsNullOrEmpty(Content.Text) || !String.IsNullOrEmpty(Content.LinkText)) {
-					<div class="co-slidercontent container-fluid">
-						<div class="">
+					<div class="co-slidercontent">
+						<div class="container-fluid">
 							@if(!String.IsNullOrEmpty(Content.Heading)){
 								<p class="lead">
 									@Html.Raw(Content.Heading.Replace("\n","<br/>"))
@@ -24,7 +24,7 @@
 								</div>
 							}
 							@if(!String.IsNullOrEmpty(Content.LinkText)){
-								<a class="btn-sm btn-default" href="@Content.Link" target="@(Content.TargetBlank is bool && Content.TargetBlank ? "_blank" : "_self")" title="@(!String.IsNullOrEmpty(Content.LinkTitleAttr) ? Content.LinkTitleAttr : Content.LinkText)">@Content.LinkText</a>
+								<a class="btn btn-default" href="@Content.Link" target="@(Content.TargetBlank is bool && Content.TargetBlank ? "_blank" : "_self")" title="@(!String.IsNullOrEmpty(Content.LinkTitleAttr) ? Content.LinkTitleAttr : Content.LinkText)">@Content.LinkText</a>
 							}
 						</div>
 					</div>
@@ -68,5 +68,7 @@
                     random(elem);
             }
         });
+        
+        window.dispatchEvent(new Event('resize'));
     });
 </script>
