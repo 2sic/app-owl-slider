@@ -1,15 +1,21 @@
-<script src="@App.Path/dist/lib/owl2/owl.carousel.min.js"></script>
+@using Connect.Koi;
+<script src="@App.Path/lib/owl2/owl.carousel.min.js" data-enableoptimizations="true" ></script>
 
-<link rel="stylesheet" href="@App.Path/dist/lib/owl2/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="@App.Path/dist/lib/owl2/assets/owl.2sic.css">
+<link rel="stylesheet" href="@App.Path/lib/owl2/assets/owl.carousel.min.css" data-enableoptimizations="true" />
+<link rel="stylesheet" href="@App.Path/dist/@(Koi.PickCss("bs3,bs4", "bs3")).css" data-enableoptimizations="true" />
+
+@{
+    var helper = CreateInstance("_Helper-Picture.cshtml");
+}
 
 <div class="co-gallery">
-    <div class="co-list owl-carousel">
+    <div class="co-list owl-carousel owl-carousel-@Dnn.Module.ModuleID">
         @foreach (var Content in AsDynamic(Data["Default"]))
         {
             <div class="sc-element co-gallery-slide">
                 @Edit.Toolbar(Content)
-				<img class="co-gallery-image owl-lazy" data-src="@(Content.Image)?w=1600&amp;h=630&amp;scale=both&amp;mode=crop&amp;quality=80" alt="@(!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title)" />
+				@(helper.Picture(Content.Image, 4.0/1.6, 80, 75,"mode=crop&scale=both", (!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title), new[] { 720, 1200, 1600, 1920, 1920 }))
+
 				@if(!String.IsNullOrEmpty(Content.Heading) || !String.IsNullOrEmpty(Content.Text) || !String.IsNullOrEmpty(Content.LinkText)) {
 					<div class="co-slidercontent">
 						<div class="container-fluid">
@@ -24,8 +30,8 @@
 								</div>
 							}
 							@if(!String.IsNullOrEmpty(Content.LinkText)){
-								<a class="btn btn-default" href="@Content.Link" target="@(Content.TargetBlank is bool && Content.TargetBlank ? "_blank" : "_self")" title="@(!String.IsNullOrEmpty(Content.LinkTitleAttr) ? Content.LinkTitleAttr : Content.LinkText)">@Content.LinkText</a>
-							}
+								<a  @Koi.Class("all='btn' bs3='btn-default' bs4,oth='btn-light'") href="@Content.Link" target="@(Content.TargetBlank is bool && Content.TargetBlank ? "_blank" : "_self")" title="@(!String.IsNullOrEmpty(Content.LinkTitleAttr) ? Content.LinkTitleAttr : Content.LinkText)">@Content.LinkText</a>
+							} 
 						</div>
 					</div>
 				}
@@ -47,14 +53,14 @@
             });
         };
 
-        $(".owl-carousel").owlCarousel({
+        $(".owl-carousel-@Dnn.Module.ModuleID").owlCarousel({
             items: 1,
             itemsDesktop: false,
             itemsDesktopSmall: false,
             itemsTablet: false,
             itemsMobile: false,
             lazyLoad: true,
-            navText: ["&lt;", "&gt;"],
+            navText: ["&lsaquo;", "&rsaquo;"],
             dots: @ListContent.ShowPagination.ToString().ToLower(),
             theme: "owl-2sic",
             autoplay: @ListContent.AutoPlay.ToString().ToLower(),
@@ -71,7 +77,11 @@
                     random(elem);
             }
         });
-        
+
+       
         window.dispatchEvent(new Event('resize'));
+
+
+
     });
 </script>
