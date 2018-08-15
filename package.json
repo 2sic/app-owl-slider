@@ -1,7 +1,7 @@
 {
  
   "name": "2sxc-app-owl-carousel-for-dnn",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A simple app for DNN (DotNetNuke) which integrates the Owl carousel",
   "main": "index.js",
   "scripts": {
