@@ -14,7 +14,7 @@
         {
             <div class="sc-element co-gallery-slide">
                 @Edit.Toolbar(Content)
-				@(helper.Picture(Content.Image, 4.0/1.6, 80, 75,"mode=crop&scale=both", (!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title), new[] { 720, 1200, 1600, 1920, 1920 }))
+				@(helper.Picture(Content.Image, 4.0/1.6, 80, 75,"mode=crop&scale=both&anchor=" + @Content.CropAnchor, (!String.IsNullOrEmpty(Content.ImgAltAttr) ? Content.ImgAltAttr : Content.Title), new[] { 720, 1200, 1600, 1920, 1920 }))
 
 				@if(!String.IsNullOrEmpty(Content.Heading) || !String.IsNullOrEmpty(Content.Text) || !String.IsNullOrEmpty(Content.LinkText)) {
 					<div class="co-slidercontent">
@@ -79,9 +79,12 @@
         });
 
        
-        window.dispatchEvent(new Event('resize'));
-
-
-
+        if (navigator.userAgent.indexOf('MSIE') !==-1||navigator.appVersion.indexOf('Trident/') >0) {
+            varevt=document.createEvent('UIEvents');
+            evt.initUIEvent('resize', true, false, window, 0);
+            window.dispatchEvent(evt);
+        } else {
+            window.dispatchEvent(new Event('resize'));
+        }
     });
 </script>
