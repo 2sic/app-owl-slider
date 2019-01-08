@@ -8,7 +8,7 @@
     <div class="co-list owl-carousel owl-carousel-@Dnn.Module.ModuleID">
         @foreach (var Content in AsDynamic(Data["Default"]))
         {
-            <div class="sc-element co-gallery-slide" style="@(!String.IsNullOrEmpty(Content.Image) ? ("background-image: url(" + @Content.Image.Replace(" ", "%20") + "?w=1600&quality=60&scale=both&mode=crop&anchor=" + @Content.CropAnchor + ")") : "" )">
+            <div class="sc-element co-gallery-slide" style="@(!String.IsNullOrEmpty(Content.Image) ? ("background-image: url('" + @Content.Image.Replace(" ", "%20") + "?w=1600&quality=60&scale=both&mode=crop&anchor=" + @Content.CropAnchor + "')") : "" )">
                 @Edit.Toolbar(Content)
 				@if(!String.IsNullOrEmpty(Content.Heading) || !String.IsNullOrEmpty(Content.Text) || !String.IsNullOrEmpty(Content.LinkText)) {
 					<div class="co-slidercontent">
