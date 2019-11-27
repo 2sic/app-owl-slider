@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.32.01" ExportDate="2018-08-15T08:31:41.6818273+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.20.02" ExportDate="2019-11-27T17:53:58.6399468+01:00">
   <Header>
     <App Guid="b1a62298-9c72-44f0-bfee-dfecdab6fe69" />
     <Language Default="en-US" />
@@ -1063,7 +1063,7 @@
       <Value Key="Heading" Value="Neuer Eintrag" Type="String">
         <Dimension DimensionID="36" ReadOnly="false" />
       </Value>
-      <Value Key="Image" Value="file:555" Type="Hyperlink">
+      <Value Key="Image" Value="file:4301" Type="Hyperlink">
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
       <Value Key="ImgAltAttr" Value="" Type="String">
@@ -1122,8 +1122,11 @@
       <Value Key="SmartSpeed" Value="650" Type="Number">
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Neuer Slider" Type="String">
+      <Value Key="Title" Value="New Slider" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Neuer Slider" Type="String">
+        <Dimension DimensionID="36" ReadOnly="false" />
       </Value>
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="544da511-8164-4490-9fa6-b28bc1aaa261" KeyString="371bc366-20ba-4e85-9a04-3bc0d59c0392">
@@ -1184,8 +1187,11 @@
       <Value Key="Location" Value="Portal File System" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
-      <Value Key="Name" Value="Slider (1 Bild pro Slide)" Type="String">
+      <Value Key="Name" Value="Slider (1 Image per Slide)" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Slider (1 Bild pro Slide)" Type="String">
+        <Dimension DimensionID="36" ReadOnly="false" />
       </Value>
       <Value Key="Path" Value="_Carousel.cshtml" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
@@ -1263,8 +1269,11 @@
       <Value Key="Location" Value="Portal File System" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
-      <Value Key="Name" Value="Slider (3 Bilder pro Slide)" Type="String">
+      <Value Key="Name" Value="Slider (3 Images per Slide)" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Slider (3 Bilder pro Slide)" Type="String">
+        <Dimension DimensionID="36" ReadOnly="false" />
       </Value>
       <Value Key="Path" Value="_Carousel 3.cshtml" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
@@ -1288,137 +1297,6 @@
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="e61dc85a-9670-4a4a-92f1-b34374d5b2ff" AttributeSetName="Slider Settings" EntityGUID="4523771d-b78e-4a32-aadc-4b15bb9597aa">
-      <Value Key="AnimateOut" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="AutoPlay" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="AutoplayTimeout" Value="6000" Type="Number">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="InfinityLoop" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="MouseDrag" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Random" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="RewindNav" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ShowNavigation" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ShowPagination" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="SmartSpeed" Value="650" Type="Number">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="OWL Slider" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="60f0de2c-363d-4f60-bcb9-16c7cb06343b">
-      <Value Key="CropAnchor" Value="topleft" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Heading" Value="Your Heading" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="File:1091" Type="Hyperlink">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ImgAltAttr" Value="Demo Alt Eintrag" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Link" Value="#" Type="Hyperlink">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="LinkText" Value="Ein etwas längerer Button leich übertrieben" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="LinkTitleAttr" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="TargetBlank" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="Slide one" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="a82c7836-fb5a-4462-bc79-936ad1faba7d">
-      <Value Key="CropAnchor" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Heading" Value="Demo Heading with&#xA;more Text" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="File:1092" Type="Hyperlink">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ImgAltAttr" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Link" Value="#" Type="Hyperlink">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="LinkText" Value="Get in Touch" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="LinkTitleAttr" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="TargetBlank" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;Let's start with a very very simple example.&amp;nbsp;&amp;nbsp;It couldn't be any simpler&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="slide two" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="371bc366-20ba-4e85-9a04-3bc0d59c0392" AttributeSetName="Image" EntityGUID="b278eb24-caae-4318-9f39-320eadc64701">
-      <Value Key="CropAnchor" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Heading" Value="Demo Heading in&#xA;two Lines" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="File:1094" Type="Hyperlink">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ImgAltAttr" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Link" Value="#" Type="Hyperlink">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="LinkText" Value="Your Linktext" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="LinkTitleAttr" Value="" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="TargetBlank" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;Your demo description&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="slide three" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-    </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="c796ab61-3f54-4fcc-8991-fc45c9fb314c">
       <Value Key="ContentDemoEntity" Value="0b69f36f-e090-4264-bd0c-ed34ce999594" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="371bc366-20ba-4e85-9a04-3bc0d59c0392" Type="String">
@@ -1437,7 +1315,7 @@
       <Value Key="Location" Value="Portal File System" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
-      <Value Key="Name" Value="Slider Fullscreen (1 Bild pro Slide)" Type="String">
+      <Value Key="Name" Value="Slider Fullscreen (1 Image per Slide)" Type="String">
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
       <Value Key="Path" Value="_Carousel Fullscreen.cshtml" Type="String">
@@ -1462,111 +1340,13 @@
         <Dimension DimensionID="35" ReadOnly="false" />
       </Value>
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="e61dc85a-9670-4a4a-92f1-b34374d5b2ff" AttributeSetName="Slider Settings" EntityGUID="4377e9c8-a7d5-4fb8-870d-8a61d9ec8749">
-      <Value Key="AnimateOut" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="AutoPlay" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="AutoplayTimeout" Value="6000" Type="Number">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="InfinityLoop" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="MouseDrag" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Random" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="RewindNav" Value="False" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ShowNavigation" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="ShowPagination" Value="True" Type="Boolean">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="SmartSpeed" Value="650" Type="Number">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="Demo" Type="String">
-        <Dimension DimensionID="35" ReadOnly="false" />
-      </Value>
-    </Entity>
   </Entities>
   <PortalFiles>
-    <File Id="555" RelativePath="Content\Demo\Demo-1.jpg" />
-    <File Id="1091" RelativePath="adam\OwlCarousel\LN7wYD02YE-8uRbHywY0Ow\Image\ren-ran-232079-1.jpg" />
-    <File Id="1092" RelativePath="adam\OwlCarousel\NngsqFr7YkS8eZNq0fq6fQ\Image\bart-zimny-345682-1.jpg" />
-    <File Id="1094" RelativePath="adam\OwlCarousel\JOt4sq7KGEOfOTIOrcZHAQ\Image\samuel-zeller-62819.jpg" />
-    <File Id="667" RelativePath="adam\OwlCarousel\15X7sBoK9UGHqnCrS13jAg\Image\BeispielbilderWide (10 of 23).jpg" />
-    <File Id="668" RelativePath="adam\OwlCarousel\3iVqJltUzEigFVw8LQEZYw\Image\Beispielbilder (13 von 16).jpg" />
-    <File Id="694" RelativePath="adam\OwlCarousel\3vR5G_HUvEavs5GgjP7LeQ\Image\BeispielbilderWide (23 of 23).jpg" />
-    <File Id="669" RelativePath="adam\OwlCarousel\3xp6yiPI8USnYGsBiA5iMQ\Image\BeispielbilderWide (18 of 23).jpg" />
-    <File Id="680" RelativePath="adam\OwlCarousel\AutPdIByyUKGtuTKRgcdaQ\Image\BeispielbilderWide (14 of 23).jpg" />
-    <File Id="681" RelativePath="adam\OwlCarousel\AutPdIByyUKGtuTKRgcdaQ\Image\BeispielbilderWide (15 of 23).jpg" />
-    <File Id="670" RelativePath="adam\OwlCarousel\d24M67M1OU-cmzWyl0flxA\Image\BeispielbilderWide (18 of 23).jpg" />
-    <File Id="556" RelativePath="adam\OwlCarousel\-G-uLO0CXkm9QNuBlEaHrw\Image\file000555007525.jpg" />
-    <File Id="678" RelativePath="adam\OwlCarousel\HWGhkcLgtUCjTwvogi3TsA\Image\BeispielbilderWide (4 of 23).jpg" />
-    <File Id="671" RelativePath="adam\OwlCarousel\Jf4IuJhXOEue4G6KSRbxbQ\Image\BeispielbilderWide (21 of 23).jpg" />
-    <File Id="682" RelativePath="adam\OwlCarousel\Ng5qTEmmYEu3HjPM7DrnoA\Image\BeispielbilderWide (16 of 23).jpg" />
-    <File Id="672" RelativePath="adam\OwlCarousel\pBIBPUS5fEaZSsZ4zienUg\Image\Beispielbilder (4 von 16).jpg" />
-    <File Id="1095" RelativePath="adam\OwlCarousel\PJ9U5mhIiECZ4J2HGh0Oiw\Image\sarah-dorweiler-211779.jpg" />
-    <File Id="673" RelativePath="adam\OwlCarousel\QLLZ6C6lLEu1XZy5Gslktw\Image\Beispielbilder (10 von 16).jpg" />
-    <File Id="674" RelativePath="adam\OwlCarousel\veObZ7WDH0GCZuZzUR2BuQ\Image\a.jpg" />
-    <File Id="675" RelativePath="adam\OwlCarousel\veObZ7WDH0GCZuZzUR2BuQ\Image\BeispielbilderWide (11 of 23).jpg" />
-    <File Id="679" RelativePath="adam\OwlCarousel\xu8T_x4_uE2RbC2AzLGzxA\Image\BeispielbilderWide (3 of 23).jpg" />
-    <File Id="676" RelativePath="adam\OwlCarousel\Y72Tat62J064MeHIYkMqxA\Image\Beispielbilder (10 von 16).jpg" />
-    <File Id="677" RelativePath="adam\OwlCarousel\zdnfmgnPFUC4eQJwJWLEeQ\Image\Beispielbilder (2 von 16).jpg" />
+    <File Id="4301" RelativePath="adam\OwlCarousel\b_NpC5DgZEK9DO00zpmVlA\Image\ren-ran-232079-1.jpg" />
   </PortalFiles>
   <PortalFolders>
-    <Folder Id="625" RelativePath="Content/Demo/" />
-    <Folder Id="1470" RelativePath="adam/OwlCarousel/LN7wYD02YE-8uRbHywY0Ow/Image/" />
-    <Folder Id="1472" RelativePath="adam/OwlCarousel/NngsqFr7YkS8eZNq0fq6fQ/Image/" />
-    <Folder Id="1474" RelativePath="adam/OwlCarousel/JOt4sq7KGEOfOTIOrcZHAQ/Image/" />
-    <Folder Id="804" RelativePath="adam/OwlCarousel/15X7sBoK9UGHqnCrS13jAg/Image/" />
-    <Folder Id="806" RelativePath="adam/OwlCarousel/3iVqJltUzEigFVw8LQEZYw/Image/" />
-    <Folder Id="841" RelativePath="adam/OwlCarousel/3vR5G_HUvEavs5GgjP7LeQ/Image/" />
-    <Folder Id="808" RelativePath="adam/OwlCarousel/3xp6yiPI8USnYGsBiA5iMQ/Image/" />
-    <Folder Id="828" RelativePath="adam/OwlCarousel/AutPdIByyUKGtuTKRgcdaQ/Image/" />
-    <Folder Id="810" RelativePath="adam/OwlCarousel/d24M67M1OU-cmzWyl0flxA/Image/" />
-    <Folder Id="633" RelativePath="adam/OwlCarousel/-G-uLO0CXkm9QNuBlEaHrw/Image/" />
-    <Folder Id="824" RelativePath="adam/OwlCarousel/HWGhkcLgtUCjTwvogi3TsA/Image/" />
-    <Folder Id="812" RelativePath="adam/OwlCarousel/Jf4IuJhXOEue4G6KSRbxbQ/Image/" />
-    <Folder Id="830" RelativePath="adam/OwlCarousel/Ng5qTEmmYEu3HjPM7DrnoA/Image/" />
-    <Folder Id="814" RelativePath="adam/OwlCarousel/pBIBPUS5fEaZSsZ4zienUg/Image/" />
-    <Folder Id="1476" RelativePath="adam/OwlCarousel/PJ9U5mhIiECZ4J2HGh0Oiw/Image/" />
-    <Folder Id="816" RelativePath="adam/OwlCarousel/QLLZ6C6lLEu1XZy5Gslktw/Image/" />
-    <Folder Id="818" RelativePath="adam/OwlCarousel/veObZ7WDH0GCZuZzUR2BuQ/Image/" />
-    <Folder Id="826" RelativePath="adam/OwlCarousel/xu8T_x4_uE2RbC2AzLGzxA/Image/" />
-    <Folder Id="820" RelativePath="adam/OwlCarousel/Y72Tat62J064MeHIYkMqxA/Image/" />
-    <Folder Id="822" RelativePath="adam/OwlCarousel/zdnfmgnPFUC4eQJwJWLEeQ/Image/" />
+    <Folder Id="7134" RelativePath="adam/OwlCarousel/b_NpC5DgZEK9DO00zpmVlA/Image/" />
     <Folder Id="631" RelativePath="adam/OwlCarousel/" />
-    <Folder Id="803" RelativePath="adam/OwlCarousel/15X7sBoK9UGHqnCrS13jAg/" />
-    <Folder Id="805" RelativePath="adam/OwlCarousel/3iVqJltUzEigFVw8LQEZYw/" />
-    <Folder Id="840" RelativePath="adam/OwlCarousel/3vR5G_HUvEavs5GgjP7LeQ/" />
-    <Folder Id="807" RelativePath="adam/OwlCarousel/3xp6yiPI8USnYGsBiA5iMQ/" />
-    <Folder Id="827" RelativePath="adam/OwlCarousel/AutPdIByyUKGtuTKRgcdaQ/" />
-    <Folder Id="2584" RelativePath="adam/OwlCarousel/b_NpC5DgZEK9DO00zpmVlA/" />
-    <Folder Id="2586" RelativePath="adam/OwlCarousel/b_NpC5DgZEK9DO00zpmVlA/Image/" />
-    <Folder Id="809" RelativePath="adam/OwlCarousel/d24M67M1OU-cmzWyl0flxA/" />
-    <Folder Id="632" RelativePath="adam/OwlCarousel/-G-uLO0CXkm9QNuBlEaHrw/" />
-    <Folder Id="823" RelativePath="adam/OwlCarousel/HWGhkcLgtUCjTwvogi3TsA/" />
-    <Folder Id="811" RelativePath="adam/OwlCarousel/Jf4IuJhXOEue4G6KSRbxbQ/" />
-    <Folder Id="1473" RelativePath="adam/OwlCarousel/JOt4sq7KGEOfOTIOrcZHAQ/" />
-    <Folder Id="1469" RelativePath="adam/OwlCarousel/LN7wYD02YE-8uRbHywY0Ow/" />
-    <Folder Id="829" RelativePath="adam/OwlCarousel/Ng5qTEmmYEu3HjPM7DrnoA/" />
-    <Folder Id="1471" RelativePath="adam/OwlCarousel/NngsqFr7YkS8eZNq0fq6fQ/" />
-    <Folder Id="813" RelativePath="adam/OwlCarousel/pBIBPUS5fEaZSsZ4zienUg/" />
-    <Folder Id="1475" RelativePath="adam/OwlCarousel/PJ9U5mhIiECZ4J2HGh0Oiw/" />
-    <Folder Id="815" RelativePath="adam/OwlCarousel/QLLZ6C6lLEu1XZy5Gslktw/" />
-    <Folder Id="817" RelativePath="adam/OwlCarousel/veObZ7WDH0GCZuZzUR2BuQ/" />
-    <Folder Id="825" RelativePath="adam/OwlCarousel/xu8T_x4_uE2RbC2AzLGzxA/" />
-    <Folder Id="819" RelativePath="adam/OwlCarousel/Y72Tat62J064MeHIYkMqxA/" />
-    <Folder Id="821" RelativePath="adam/OwlCarousel/zdnfmgnPFUC4eQJwJWLEeQ/" />
+    <Folder Id="7133" RelativePath="adam/OwlCarousel/b_NpC5DgZEK9DO00zpmVlA/" />
   </PortalFolders>
 </SexyContent>
